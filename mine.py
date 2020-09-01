@@ -23,8 +23,8 @@ if latest2[0].text == current_date:
 	href = element[0].get_attribute('href')
 	txt_subj = element[0].text
 
-	user = "jvnotificationmailsystem01@yahoo.com"
-	pas = "bihlghjgxhldjlsr"
+	user = "///"
+	pas = "///"
 
 	body = """Subject: New post from FMI 
 
