@@ -13,7 +13,7 @@ current_date = str(current_date.strftime("%d.%m.%Y"))
 op = webdriver.ChromeOptions()
 op.add_argument('--headless')
 driver = webdriver.Chrome('/usr/bin/chromedriver',options=op)
-driver.get('https://fmi.unibuc.ro/')
+driver.get('///')
 
 #latest = driver.find_element(By.XPATH, '//*[@id="content"]/div/div/div[2]/div/div[8]/div[1]/ul/li[1]/time')
 latest2 = driver.find_elements_by_xpath('//*[@id="content"]/div/div/div[2]/div/div[8]/div[1]/ul/li[1]/time')
