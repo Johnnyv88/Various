@@ -8,8 +8,6 @@ import time
 current_date = date.today()
 current_date = str(current_date.strftime("%d.%m.%Y"))
 
-
-
 op = webdriver.ChromeOptions()
 op.add_argument('--headless')
 driver = webdriver.Chrome('/usr/bin/chromedriver',options=op)
@@ -36,8 +34,6 @@ if latest2[0].text == current_date:
 		You from the past.
 
 	""".format(latest2[0].text, txt_subj, href)
-
-
 
 	s = smtplib.SMTP_SSL('smtp.mail.yahoo.com', 465)
 	s.login(user, pas)
